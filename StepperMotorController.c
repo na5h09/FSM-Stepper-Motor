@@ -58,8 +58,8 @@ volatile int delay;
 #define Clean4_4	36
 #define Clean2_4	37
 #define Clean1_4	38
-#define LED_OFF		0x00
-#define LED_ON		0x20
+#define LED_OFF		0
+#define LED_ON		64
 
 typedef struct state {		//define the struct
 		uint8_t Next[4];
@@ -129,14 +129,14 @@ int main(void){
 	SYSCTL_RCGCGPIO_R |= 0x33; //initialize each port used
 	delay++;
 	
-	GPIO_PORTE_DIR_R |= 0x3F;
-	GPIO_PORTE_DEN_R |= 0x3F;
+	GPIO_PORTE_DIR_R |= 0x1F;
+	GPIO_PORTE_DEN_R |= 0x1F;
 	
 	GPIO_PORTA_DIR_R &= 0xCF;
 	GPIO_PORTA_DEN_R |= 0x30;
 	
-	//GPIO_PORTB_DIR_R |= 0x40;
-	//GPIO_PORTB_DEN_R |= 0x40;
+	GPIO_PORTB_DIR_R |= 0x40;
+	GPIO_PORTB_DEN_R |= 0x40;
 	
 	GPIO_PORTF_DIR_R |= 0x02;
 	GPIO_PORTF_DEN_R |= 0x02;
@@ -151,7 +151,7 @@ int main(void){
 		GPIO_PORTF_DATA_R ^= 0x02; //toggle the heartbeat LED
 		
 		GPIO_PORTE_DATA_R = FSM[current].output; //output to the motor
-		GPIO_PORTE_DATA_R ^= FSM[current].LED; //toggle the light when it is on
+		GPIO_PORTB_DATA_R = FSM[current].LED; //toggle the light when it is on
 		
 		SysTick_Wait10ms(FSM[current].delay); //delay for how ever long each state runs for
 		
