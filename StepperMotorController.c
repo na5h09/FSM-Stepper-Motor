@@ -77,37 +77,37 @@ typedef struct state {		//define the struct
 		{/*Wiper16_1*/ {Wiper1_2, Wiper1_2, Clean1_2, Clean1_2}, LED_OFF, 16, 5},
 		{/*Wiper1_2*/ {Wiper2_2, Wiper2_2, Clean2_2, Clean2_2}, LED_OFF, 1, 5},
 		{/*Wiper2_2*/ {Wiper4_2, Wiper4_2, Clean4_2, Clean4_2}, LED_OFF, 2, 5},
-		{/*Wiper4_2*/ {Wiper8_2, Wiper8_2, Clean8_2, Clean8_2}, LED_OFF, 4, 5},
-		{/*Wiper8_2*/ {Wiper16_2, Wiper16_2, Clean16_2, Clean16_2}, LED_OFF, 8, 5},
-		{/*Wiper16_2*/ {Wiper8_3, Wiper8_3, Clean8_3, Clean8_3}, LED_OFF, 16, 5},
+		{/*Wiper4_2*/ {Wiper8_2, Wiper8_2, Clean8_2, Clean8_2}, LED_OFF, 4, 10},
+		{/*Wiper8_2*/ {Wiper16_2, Wiper16_2, Clean16_2, Clean16_2}, LED_OFF, 8, 10},
+		{/*Wiper16_2*/ {Wiper8_3, Wiper8_3, Clean8_3, Clean8_3}, LED_OFF, 16, 10},
 		{/*Wiper8_3*/ {Wiper4_3, Wiper4_3, Clean4_3, Clean4_3}, LED_OFF, 8, 5},
 		{/*Wiper4_3*/ {Wiper2_3, Wiper2_3, Clean2_3, Clean2_3}, LED_OFF, 4, 5},
 		{/*Wiper2_3*/ {Wiper1_3, Wiper1_3, Clean1_3, Clean1_3}, LED_OFF, 2, 5},
 		{/*Wiper1_3*/ {Wiper16_4, Wiper16_4, Clean16_4, Clean16_4}, LED_OFF, 1, 5},
 		{/*Wiper16_4*/ {Wiper8_4, Wiper8_4, Clean8_4, Clean8_4}, LED_OFF, 16, 5},
 		{/*Wiper8_4*/ {Wiper4_4, Wiper4_4, Clean4_4, Clean4_4}, LED_OFF, 8, 5},
-		{/*Wiper4_4*/ {Wiper2_4, Wiper2_4, Clean2_4, Clean2_4}, LED_OFF, 4, 5},
-		{/*Wiper2_4*/ {Wiper1_4, Wiper1_4, Clean1_4, Clean1_4}, LED_OFF, 2, 5},
-		{/*Wiper1_4*/ {Rest, Wiper2_1, Clean2_1, Clean2_1}, LED_OFF, 1, 5},
+		{/*Wiper4_4*/ {Wiper2_4, Wiper2_4, Clean2_4, Clean2_4}, LED_OFF, 4, 10},
+		{/*Wiper2_4*/ {Wiper1_4, Wiper1_4, Clean1_4, Clean1_4}, LED_OFF, 2, 10},
+		{/*Wiper1_4*/ {Rest, Wiper2_1, Clean2_1, Clean2_1}, LED_OFF, 1, 10},
 		{/*Clean1_1*/ {Wiper2_1, Wiper2_1, Clean2_1, Clean2_1}, LED_ON, 0, 5},
 		{/*Clean2_1*/ {Wiper4_1, Wiper4_1, Clean4_1, Clean4_1}, LED_ON, 2, 5},
 		{/*Clean4_1*/ {Wiper8_1, Wiper8_1, Clean8_1, Clean8_1}, LED_ON, 4, 5},
-		{/*Clean8_1*/ {Wiper16_1, Wiper16_1, Clean16_1, Clean16_1}, LED_OFF, 8, 5},
-		{/*Clean16_1*/ {Wiper1_2, Wiper1_2, Clean1_2, Clean1_2}, LED_OFF, 16, 5},
+		{/*Clean8_1*/ {Wiper16_1, Wiper16_1, Clean16_1, Clean16_1}, LED_ON, 8, 5},
+		{/*Clean16_1*/ {Wiper1_2, Wiper1_2, Clean1_2, Clean1_2}, LED_ON, 16, 5},
 		{/*Clean1_2*/ {Wiper2_2, Wiper2_2, Clean2_2, Clean2_2}, LED_ON, 1, 5},
 		{/*Clean2_2*/ {Wiper4_2, Wiper4_2, Clean4_2, Clean4_2}, LED_ON, 2, 5},
-		{/*Clean4_2*/ {Wiper8_2, Wiper8_2, Clean8_2, Clean8_2}, LED_ON, 4, 5},
-		{/*Clean8_2*/ {Wiper16_2, Wiper16_2, Clean16_2, Clean16_2}, LED_OFF, 8, 5},
-		{/*Clean16_2*/ {Wiper8_3, Wiper8_3, Clean8_3, Clean8_3}, LED_OFF, 16, 5},
+		{/*Clean4_2*/ {Wiper8_2, Wiper8_2, Clean8_2, Clean8_2}, LED_ON, 4, 10},
+		{/*Clean8_2*/ {Wiper16_2, Wiper16_2, Clean16_2, Clean16_2}, LED_ON, 8, 10},
+		{/*Clean16_2*/ {Wiper8_3, Wiper8_3, Clean8_3, Clean8_3}, LED_ON, 16, 10},
 		{/*Clean8_3*/ {Wiper4_3, Wiper4_3, Clean4_3, Clean4_3}, LED_ON, 8, 5},
 		{/*Clean4_3*/ {Wiper2_3, Wiper2_3, Clean2_3, Clean2_3}, LED_ON, 4, 5},
 		{/*Clean2_3*/ {Wiper1_3, Wiper1_3, Clean1_3, Clean1_3}, LED_ON, 2, 5},
-		{/*Clean1_3*/ {Wiper16_4, Wiper16_4, Clean16_4, Clean16_4}, LED_OFF, 1, 5},
-		{/*Clean16_4*/ {Wiper8_4, Wiper8_4, Clean8_4, Clean8_4}, LED_OFF, 16, 5},
+		{/*Clean1_3*/ {Wiper16_4, Wiper16_4, Clean16_4, Clean16_4}, LED_ON, 1, 5},
+		{/*Clean16_4*/ {Wiper8_4, Wiper8_4, Clean8_4, Clean8_4}, LED_ON, 16, 5},
 		{/*Clean8_4*/ {Wiper4_4, Wiper4_4, Clean4_4, Clean4_4}, LED_ON, 8, 5},
-		{/*Clean4_4*/ {Wiper2_4, Wiper2_4, Clean2_4, Clean2_4}, LED_ON, 4, 5},
-		{/*Clean2_4*/ {Wiper1_4, Wiper1_4, Clean1_4, Clean1_4}, LED_ON, 2, 5},
-		{/*Clean1_4*/ {Rest, Wiper2_1, Clean2_1, Clean2_1}, LED_OFF, 1, 5}
+		{/*Clean4_4*/ {Wiper2_4, Wiper2_4, Clean2_4, Clean2_4}, LED_ON, 4, 10},
+		{/*Clean2_4*/ {Wiper1_4, Wiper1_4, Clean1_4, Clean1_4}, LED_ON, 2, 10},
+		{/*Clean1_4*/ {Rest, Wiper2_1, Clean2_1, Clean2_1}, LED_ON, 1, 10}
 	};			//define the elements of each state
 
 	uint8_t current = 0; //temp variables
@@ -151,7 +151,7 @@ int main(void){
 		GPIO_PORTF_DATA_R ^= 0x02; //toggle the heartbeat LED
 		
 		GPIO_PORTE_DATA_R = FSM[current].output; //output to the motor
-		GPIO_PORTB_DATA_R = FSM[current].LED; //toggle the light when it is on
+		GPIO_PORTB_DATA_R ^= FSM[current].LED; //toggle the light when it is on
 		
 		SysTick_Wait10ms(FSM[current].delay); //delay for how ever long each state runs for
 		
