@@ -35,7 +35,7 @@ void SysTick_Init(void){
 	NVIC_ST_CTRL_R = 0x00000005;
 }
 // The delay parameter is in units of the 80 MHz core clock. (12.5 ns)
-void SysTick_Wait(uint32_t delay){
+void SysTick_Wait(unsigned long delay){
 	// write this
 	NVIC_ST_RELOAD_R = delay - 1;
 	NVIC_ST_CURRENT_R = 0;
